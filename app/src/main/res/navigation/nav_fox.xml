@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_fox"
+    app:startDestination="@id/fox">
+
+    <fragment
+        android:id="@+id/fox"
+        android:name="com.tpisoftware.tpunavigationsample.page.Fox"
+        android:label="fragment_fox"
+        tools:layout="@layout/fragment_fox" >
+        <action
+            android:id="@+id/action_fox_to_fox2"
+            app:destination="@id/fox2" />
+    </fragment>
+    <fragment
+        android:id="@+id/fox2"
+        android:name="com.tpisoftware.tpunavigationsample.page.Fox2"
+        android:label="fragment_fox2"
+        tools:layout="@layout/fragment_fox2" />
+</navigation>

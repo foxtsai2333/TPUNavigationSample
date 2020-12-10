@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_maple"
+    app:startDestination="@id/maple">
+
+    <fragment
+        android:id="@+id/maple"
+        android:name="com.tpisoftware.tpunavigationsample.page.Maple"
+        android:label="fragment_maple"
+        tools:layout="@layout/fragment_maple" >
+        <action
+            android:id="@+id/action_maple_to_maple2"
+            app:destination="@id/maple2" />
+    </fragment>
+    <fragment
+        android:id="@+id/maple2"
+        android:name="com.tpisoftware.tpunavigationsample.page.Maple2"
+        android:label="fragment_maple2"
+        tools:layout="@layout/fragment_maple2">
+        <argument
+            android:name="magicNumber"
+            android:defaultValue="0"
+            app:argType="integer" />
+    </fragment>
+</navigation>

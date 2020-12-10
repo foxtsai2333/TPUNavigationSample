@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_psyduck"
+    app:startDestination="@id/psyduck">
+
+    <fragment
+        android:id="@+id/psyduck"
+        android:name="com.tpisoftware.tpunavigationsample.page.Psyduck"
+        android:label="fragment_psyduck"
+        tools:layout="@layout/fragment_psyduck" />
+</navigation>
